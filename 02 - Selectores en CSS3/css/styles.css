@@ -1,0 +1,40 @@
+h2 {
+    color: steelblue;
+}
+
+nav {
+    border: 1px solid black;
+}
+
+.borde {
+    text-align: right;
+}
+
+#section {
+    border: 1px solid black;
+}
+
+[href] {
+    text-decoration: none;
+}
+
+[href="https://alexcgdesign.com/inicio"] {
+    color: red;
+}
+
+/* Selecciona a los elementos que tengan un atributo que comience con hsttps */
+[href^="hsttps"] {
+    color: darkolivegreen;
+}
+
+/* Selecciona a los elementos que tengan un atributo que termine con .org */
+[href$=".org"] {
+    background: steelblue;
+    color: white;
+}
+
+/* Selecciona a los elementos que tengan un atributo que contenga alexcgdesign */
+[href*='alexcgdesign'] {
+    background: darksalmon;
+}
+

@@ -1,0 +1,26 @@
+h2, h3 {
+    font-size: 25px;
+    font-family: 'Arial';
+}
+
+/* Estiliza a todos las etiquetas a que entén dentro de una etiqueta que tengan la clase contenedor */
+.contenedor a {
+    text-decoration: none;
+    color: firebrick;
+}
+
+/* > => Indica que debe de ser hijo directo */
+.contenedor > a {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Selecciona solo al hermano que esta siguiente o adyacente*/
+h2 + p {
+    color: gold;
+}
+
+/* Seleeciona a todos los hermanos que sigan o adyacente */
+h3 ~ p {
+    color: indigo;
+}
