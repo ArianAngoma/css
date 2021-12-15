@@ -8,7 +8,9 @@ body {
 }
 
 .box1 {
+    width: 100%;
     background: steelblue;
+    border: 1px solid transparent;
     /*margin-top: 50px;
     margin-right: 25px;
     margin-bottom: 30px;
@@ -19,9 +21,25 @@ body {
     /* Margen de arriba/abajo y derecha/izquierda */
     /*margin: 40px 80px;*/
 
-    margin: 40px 0 80px 0;
+    /*margin: 40px 0 80px 0;*/
+
+    /* Para centar un elemento con margin: auto; debe de tener un width y ser un elemento bloque */
+    /*margin: auto;*/
+    /* En flexbox el margin: auto; a veces da problemas entonces se recomienda esto */
+    /*margin-right: auto;
+    margin-left: auto;*/
+    /*margin: 0 auto;*/
+
+    /*margin-bottom: 50px;*/
+}
+
+.header {
+    background: gold;
+    height: 40px;
+    margin-top: 40px;
 }
 
 .box2 {
     background: tomato;
+    margin-top: 40px;
 }
