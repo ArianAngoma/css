@@ -1,16 +1,20 @@
-body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .box {
-    width: 200px;
-    height: 100px;
+    width: 500px;
+    height: 300px;
 }
 
 .box1 {
-    width: 100%;
     background: steelblue;
     border: 1px solid transparent;
+    /*
+    box-sizing: border-box;
+    */
     /*margin-top: 50px;
     margin-right: 25px;
     margin-bottom: 30px;
@@ -35,13 +39,21 @@ body {
     /* Para que un elemento padre no hague colapso de margenes con el hijo se agrega on border o un padding al hijo */
 }
 
-.header {
-    background: gold;
-    height: 40px;
-    margin-top: 40px;
-}
-
 .box2 {
-    background: tomato;
+    /*
+    box-sizing: border-box;
+    */
+    background: crimson;
     margin-top: 40px;
+    /*
+    color: white;
+    */
+
+    /*padding-top: 20px;
+    padding-right: 50px;
+    padding-left: 80px;
+    padding-bottom: 100px;*/
+
+    padding: 20px 50px 100px 80px;
+    overflow: hidden;
 }
