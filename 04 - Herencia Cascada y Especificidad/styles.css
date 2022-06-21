@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+!* No se puede centrar un elemento con margin: 0 auto; si no es bloque y si no tiene un width definido *!
+
+.enlaces {
+    display: inline-block; !* display -> define un elemento en linea o en bloque *!
+    text-decoration: none;
+    background: crimson;
+    color: white;
+    !*width: 500px;
+    height: 300px;*!
+    padding: 30px 20px;
+}
+
+
+.block {
+    display: none; !* saca el elemento, diferente a opacity *!
+}
+*/
+
+.header {
+    height: 200px;
+    background: crimson;
+    color: white;
+}
+
+
+.header {
+    height: 2000px;
+}
+
+
+/*
+1000 - inline css
+100  - ID
+10   - Class, Atributos
+1    - Elemento
+*/
