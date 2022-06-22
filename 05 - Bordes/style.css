@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    background: orangered;
+    width: 200px;
+    height: 200px;
+    margin: 40px auto 0;
+
+    /*border: 10px dashed brown;*/
+
+    /*border-width: 10px;
+    border-style: dashed;
+    border-color: brown;*/
+
+    /*border-width: 20px 30px;
+    border-style: groove dashed;
+    border-color: brown steelblue crimson;*/
+
+    /*border-top: 10px solid brown;
+    border-right: 5px dashed white;
+    border-bottom: 8px double black;
+    border-left: 15px dotted steelblue;*/
+
+    border-top-width: 10px;
+    border-top-style: solid;
+    border-top-color: brown;
+
+    border-right-width: 5px;
+    border-right-style: dashed;
+    border-right-color: white;
+
+    border-bottom-width: 8px;
+    border-bottom-style: double;
+    border-bottom-color: black;
+
+    border-left-width: 15px;
+    border-left-style: dotted;
+    border-left-color: steelblue;
+}
