@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card {
+    width: 500px;
+    margin: 30px auto;
+    box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.25);
+    padding-bottom: 20px;
+    border-radius: 5px;
+}
+
+.img {
+    display: block;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    object-fit: cover;
+}
+
+.container {
+    width: 90%;
+    margin: 15px auto;
+}
+
+.title {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.description {
+    text-align: center;
+}
+
+.link {
+    color: white;
+    text-align: center;
+    background: crimson;
+    padding: 10px;
+    display: block;
+    width: 100px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 20px auto;
+}
