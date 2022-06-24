@@ -9,6 +9,8 @@
     color: rgb(255, 255, 255);
     /*background: rgb(red, green, blue);*/
     background: rgba(94, 60, 196, 0.2);
+
+    background: #ff0000;
 }
 
 .title {
