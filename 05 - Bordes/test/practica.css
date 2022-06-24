@@ -52,3 +52,16 @@ body {
     margin: 20px auto 0;
     text-decoration: none;
 }
+
+
+.goku {
+    display: block;
+    width: 300px;
+    margin: 30px auto;
+    object-fit: cover;
+    /*drop-shadow(h-offset v-offset blur color);*/
+
+/*    filter: drop-shadow(10px 10px 10px gold);*/
+
+    filter: drop-shadow(0 0 40px gold);
+}
