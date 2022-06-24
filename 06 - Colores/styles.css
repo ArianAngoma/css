@@ -11,6 +11,12 @@
     background: rgba(94, 60, 196, 0.2);
 
     background: #ff0000;
+
+    /*
+    background: hsl(hue, saturation, lightness);
+    */
+
+    background: hsl(70, 45%, 80%);
 }
 
 .title {
