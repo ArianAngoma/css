@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    padding: 45px 0;
+    color: rgb(255, 255, 255);
+    /*background: rgb(red, green, blue);*/
+    background: rgba(94, 60, 196, 0.2);
+}
+
+.title {
+    text-align: center;
+}
