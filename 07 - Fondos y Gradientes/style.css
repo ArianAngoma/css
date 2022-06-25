@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("img/textura.png");
+}
+
+.container {
+    width: 70%;
+    height: 300px;
+    margin: 30px auto;
+    /*background: rgb(100, 100, 250);*/
+
+    background-color: rgb(100, 100, 250);
+
+    /*background-image: url("img/spidy.png");*/
+
+    /*background-image: url("img/spidy.png"), url("img/sun.png");*/
+
+    background-image: url("img/cloud.png");
+
+    background-repeat: no-repeat; /* no-repeat -> hace que la imagen no se repita */
+
+    /*background-repeat: repeat-x;*/ /* repeat-x -> hace que se repita la imagen solo en el margen x */
+
+    /*background-repeat: repeat-y;*/ /* repeat-y -> hace que se repita la imagen solo en el margen y */
+
+
+}
