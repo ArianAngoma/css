@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url("img/textura.png");
+    /*background-image: url("img/textura.png");*/
 }
 
 .container {
@@ -20,7 +20,7 @@ body {
 
     /*background-image: url("img/spidy.png"), url("img/sun.png");*/
 
-    background-image: url("img/cloud.png");
+    background-image: url("img/spidy.png");
 
     background-repeat: no-repeat; /* no-repeat -> hace que la imagen no se repita */
 
@@ -28,5 +28,15 @@ body {
 
     /*background-repeat: repeat-y;*/ /* repeat-y -> hace que se repita la imagen solo en el margen y */
 
+    /*background-position: x y;*/ /* x y -> posicion de la imagen */
+    /*background-position: 30px 100px;*/ /* se mueve 30px hacia la derecha y 100px hacia abajo */
+    /*background-position: top right;*/ /* se mueve hacia arriba y hacia la derecha */
+    /*background-position: bottom right;*/ /* se mueve hacia abajo y hacia la derecha */
+    /*background-position: top center;*/ /* se mueve hacia arriba y se centra en el eje Y */
+    /*background-position: top 10px right 30px*/; /* se mueve hacia arriba, 10px a lado contrario (en este caso abajo), y hacia la derecha, 30px a lado contrario (en este caso hacia la izquierda) */
+    background-position: center; /* se centra en el eje X y Y */
 
+    /*background-size: 70% 300px; *//* se ajusta el tamaño de la imagen - width y height */
+    /*background-size: contain;*/ /* se ajusta el tamaño de la imagen sin cortar la imagen */
+    background-size: cover; /* se ajusta el tamaño de la imagen ocupando todo el elemento */
 }
