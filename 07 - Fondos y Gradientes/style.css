@@ -6,6 +6,9 @@
 
 body {
     /*background-image: url("img/textura.png");*/
+
+    /*display: flex;
+    justify-content: space-evenly;*/
 }
 
 .container {
@@ -39,4 +42,32 @@ body {
     /*background-size: 70% 300px; *//* se ajusta el tamaño de la imagen - width y height */
     /*background-size: contain;*/ /* se ajusta el tamaño de la imagen sin cortar la imagen */
     background-size: cover; /* se ajusta el tamaño de la imagen ocupando todo el elemento */
+}
+
+
+.atachment {
+   /* margin-top: 100px;*/
+    width: 100%;
+    height: 100vh;
+    padding: 0.1px;
+    background-image: url("img/img-hero.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.fixed {
+    background-attachment: fixed;  /* ocupada el 100% del width y 100% del height del navegador */
+}
+
+.title {
+    font-size: 70px;
+    font-family: "Arial";
+    text-align: center;
+    color: #fff;
+    margin-top: 250px;
+}
+
+.space {
+    height: 3000px;
 }
