@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #9ab1f6;
+
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.container {
+    background: #fff;
+    width: 70%;
+    margin: 30px auto;
+    padding: 20px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .2);
+    text-align: center;
+}
+
+.h1 {
+    text-align: inherit;
+}
+
+/*p {
+    text-align: left;
+}
+
+a {
+    display: block;
+    text-align: right;
+}*/
+
+.img {
+    width: 250px;
+}
+
+.copy {
+    /*text-align: justify;*/
+    padding: 10px 0;
+    /*letter-spacing: 20px;*/ /* Define el espacio de entre cada letra, puede ser positivo o negativo */
+
+    /*word-spacing: 30px;*/ /* Define el espacio entre cada palabra */
+
+    /*text-shadow: 30px 3px 6px rgba(0, 0, 0, .5);*/
+
+    /*text-transform: uppercase;*/ /* transforma el texto */
+    /*text-transform: capitalize;*/ /* pone la primera letra de cada palabra en mayuscula */
+
+    /*line-height: 30px;*/ /* La altura de cada linea */
+
+    /*font: ;*/
+
+    /*font-variant: normal;*/ /* Por defecto */
+    /*font-variant: small-caps;*/ /* Hace el tento en mayuscula, pero si tento tiene mayusculo lo hce mas grande */
+
+    /*font-style: oblique;*/ /* Estilo de la fuente */
+}
+
+.bold {
+    color: crimson;
+
+    /*font-weight: bold;*/ /* Peso del testo */
+    /*font-weight: 600;*/ /* Tambien se puede usar numeros */
+
+    font-size: 20px; /* Tamaño de la fuente */
+}
+
+.enlace {
+    display: inline-block;
+    color: crimson;
+    /*text-decoration: line style color;*/
+
+    /*text-decoration-line: line-through overline underline;*/
+
+    /*text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: crimson;*/
+
+    text-decoration: none;
+
+    border: 1px solid;
+    padding: 10px 25px;
+}
+
+input {
+    font-family: inherit;
+}
