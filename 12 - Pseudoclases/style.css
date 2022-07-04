@@ -1,3 +1,7 @@
+:root { /* raiz del documento html */
+    background: steelblue;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -36,4 +40,98 @@ a.enlace:hover {
 .enlace:active { /* active -> Selectiona al elemento cuando estamos dando click al elemento */
     background: steelblue;
     color: #fff;
+}
+
+.event {
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 20px;
+    background: crimson;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.event:active {
+    padding: 23px;
+}
+
+#target /*.box*/
+{
+    width: 100px;
+    height: 100px;
+    margin-top: 30px;
+    margin-left: 20px;
+    background: steelblue;
+    transition: .3s;
+}
+
+#target:target { /* target -> Selecciona al elemento disparado */
+    margin-left: 150px;
+}
+
+
+.form {
+    width: 80%;
+    background: #f2f2f2;
+    margin: 30px auto;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    padding: 30px;
+}
+
+.form:focus-within { /* focus-within -> Seleccionado si un elemeto hijo tiene el estado "focus" */
+    background: darkcyan;
+}
+
+.form_title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input {
+    display: block;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 12px 5px;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+}
+
+input[type="checkbox"] {
+    display: inline-block;
+}
+
+input:focus { /* focus -> hace referencia al elemento en que estamos centrados */
+    background: rgba(220, 20, 60, 0.5);
+}
+
+h2:focus {
+    background: rgba(220, 20, 60);
+    color: white;
+}
+
+input[type="checkbox"]:checked + label { /* checkbox (solo para input check y radio) -> Selecciona al elemento acertado */
+    background: rgba(220, 20, 60);
+    color: #fff;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: normal;
+    font-family: 'Arian';
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h3:not(.title):not(:hover) { /* not -> espesifica al que no conincida  */
+    color: crimson;
+}
+
+
+h3:not(:hover) {
+    text-decoration: line-through;
 }
