@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.enlace {
+    display: block;
+    background: tomato;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    border-bottom: 3px solid #ebd1db;
+}
+
+.enlace:link { /* a:link (solo se utiliza para elementos "a") -> hace referencia a los enlaces que nunca fueron viseitados por el navegador */
+    background: burlywood;
+    color: #000;
+}
+
+.enlace:visited { /* a:visited (solo para "a") -> Hace referencia a elementos que ya fueron visitados */
+    background: crimson;
+}
+
+/*
+a.enlace:hover {
+    text-decoration: line-through;
+}
+*/
+
+.enlace:hover { /* hover -> Selectiona al elemento que esta pasando el mouse */
+    padding: 40px 20px;
+    transition: .3s;
+}
+
+.enlace:active { /* active -> Selectiona al elemento cuando estamos dando click al elemento */
+    background: steelblue;
+    color: #fff;
+}
