@@ -37,6 +37,45 @@ body {
 }*/
 
 
+/*
 .box:only-of-type {
+    background: tomato;
+}
+*/
+
+
+/*.box:first-of-type { !* first-of-type -> selecciona al primer elemento con referencia a su padre *!
+    background: tomato;
+}*/
+
+
+/*.box:last-of-type { !* last-of-type -> Selecciona al ultimo elemento de su tipo con refencia a su padre *!
+    background: tomato;
+}*/
+
+/*.box:nth-of-type(2) { !* nth-of-type(2) -> Selecciona el segundo elemento de su tipo con referencia a su padre *!
+    background: tomato;
+}*/
+
+
+/*.box:nth-of-type(odd) { !* Seleciona a los unicos elemeentos imapres con refrencia a su padre *!
+    background: tomato;
+}*/
+
+/*.box:nth-of-type(even) { !* Seleciona a los unicos elemeentos pares con refrencia a su padre *!
+    background: tomato;
+}*/
+
+/*.box:nth-of-type(n) { !* n itera cada vez mas empezando desde 0, aumentando de 1 en 1, hasta ya no encontrar coincidencias *!
+    background: tomato;
+}*/
+
+/*
+.box:nth-child(2n) { !* Se aumenta de 2 en 2 *!
+    background: tomato;
+}
+*/
+
+.box:nth-last-of-type(1) { /* De abajo hacia arriba */
     background: tomato;
 }
