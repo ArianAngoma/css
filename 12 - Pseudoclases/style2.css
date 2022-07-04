@@ -76,6 +76,32 @@ body {
 }
 */
 
-.box:nth-last-of-type(1) { /* De abajo hacia arriba */
+/*.box:nth-last-of-type(1) { !* De abajo hacia arriba *!
+    background: tomato;
+}*/
+
+/*.box:only-child { !* only-child -> hijos unicos *!
+    background: tomato;
+}*/
+
+
+/*.box:first-child { !* first-child -> primer hijo *!
+    background: tomato;
+}*/
+
+/*.box:last-child { !* last-child -> selecciona al ultimo elemento de su padre *!
+    background: tomato;
+}*/
+
+
+/*div:nth-child(2) {
+    background: tomato;
+}*/
+
+/*.container :nth-child(1) { !* *:nth-child() -> si ponemos un espacio antes, es como si fuera un selcector universal *!
+    background: tomato;
+}*/
+
+.container :nth-last-child(1) {
     background: tomato;
 }
