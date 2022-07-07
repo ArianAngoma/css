@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Arial', sans-serif;
+    height: 300vh;
 }
 
 .container {
@@ -13,6 +14,7 @@ body {
     height: 530px;
     margin: 20px auto;
     border: 5px solid crimson;
+    position: relative;
 }
 
 .box {
@@ -29,13 +31,51 @@ body {
 
 .static {
     position: static;
+    /*z-index: 100;*/ /* z-index -> solo para elementos posicionados */
 }
 
 .relative { /* aunque el elemento se mueve su espacio original sigue */
     background: crimson;
     position: relative;
+
+    /*z-index: auto;*/ /* (defecto) - 0 */
+    /*bottom: 40px;*/
+    /*left: 10px;*/
     /*top: ;
     left: ;
     right: ;
     bottom: ;*/
+}
+
+.absolute { /* se posiciona depende a su padre posicionado, si no tiene, al body */
+    background: purple;
+    position: absolute;
+    /*top: 30%;
+    left: 40px;*/
+    margin: 0;
+    /*z-index: 1;*/
+
+    top: 0;
+    right: 0;
+}
+
+.fixed { /* se posiciona depende al navegador viewport */
+    width: 100%;
+    height: auto;
+    background: darkcyan;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    padding: 1em 0;
+}
+
+.fixed a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.fixed a:hover {
+    text-decoration: underline;
 }
