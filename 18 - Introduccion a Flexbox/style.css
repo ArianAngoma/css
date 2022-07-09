@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    height: 600px;
+    outline: 2px solid #000;
+    margin: 30px auto;
+
+    display: flex;
+
+    /*display: inline-flex;*/ /* inline-flex -> permite que sea un elemento en linea */
+
+    /*align-items: stretch;*/ /* stretch (deefecto) -> estira los items */
+    /*align-items: flex-start;*/ /* flex-start -> Tamaño de los item es el minimo de su contenido */
+
+    flex-direction: column-reverse; /* row (defecto) */
+}
+
+
+.item { /* si no espesificamos un width o un height, se estira, es su comportamiento de por defecto */
+    --height: 90px;
+    background: tomato;
+    width: 90px;
+    height: var(--height);
+    line-height: var(--height);
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+}
+
+.item1 {
+
+}
+
+.item2 {
+    background: darkslateblue;
+}
+
+.item3 {
+    background: crimson;
+}
+
+.item4 {
+    background: steelblue;
+}
