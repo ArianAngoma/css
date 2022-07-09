@@ -29,22 +29,40 @@
     /*flex-flow: <flex-direction> <flex-wrap>;*/
     /*flex-flow: row wrap;*/
 
+    /* justify-content -> permite alinear elementos en el main axis */
+
     /*justify-content: space-between;*/ /* space-between -> alina los elementos, el primero al inicio del flex container y el ultimo, al final del flex container */
 
     /*justify-content: space-around;*/ /* space-around -> destribuye a los item de igual manera pero no los pega a los lados, pero sumando los espacios de cada elemento */
 
     /*justify-content: space-evenly;*/ /* space-evenly -> distribuye a los elementos con el mismo espacio de separación sin tocar los border del flex container */
 
-    justify-content: center; /* center -> centra a todos los elementos */
+    /*justify-content: center;*/ /* center -> centra a todos los elementos */
 
     /* las propiedaes de alienamiento solo destribuyen a los item si hay espacio disponible en el flex container */
+
+    /* align-items -> alinea elementos en el cross axis */
+
+    /*align-items: stretch;*/ /* stretch (defecto) -> se estira por el cross axis */
+
+    /*align-items: center;*/ /* center -> centra los elementos en el cross axis */
+
+    /*align-items: flex-start;*/ /* flex-start -> los elementos se alinearan al inicio del cross axis */
+
+    /*align-items: flex-end;*/ /* flex-end -> los elementos se alinearan al final del cross axis */
+
+    /*align-items: baseline;*/ /* baseline -> se alinean en base asu base del contenido del elemento */
+
+    flex-wrap: wrap;
+
+    align-content: flex-start; /* solo serviría si tiene elementos que se desbordan - similar a justify-contect */
 }
 
 
 .item { /* si no espesificamos un width o un height, se estira, es su comportamiento de por defecto */
     --height: 90px;
     background: tomato;
-    width: 90px;
+    width: 200px;
     height: var(--height);
     line-height: var(--height);
     color: #fff;
