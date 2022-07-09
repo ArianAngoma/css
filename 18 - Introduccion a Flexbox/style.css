@@ -18,7 +18,26 @@
     /*align-items: stretch;*/ /* stretch (deefecto) -> estira los items */
     /*align-items: flex-start;*/ /* flex-start -> Tamaño de los item es el minimo de su contenido */
 
-    flex-direction: column-reverse; /* row (defecto) */
+    flex-direction: row; /* row (defecto) */
+
+    /*flex-wrap: nowrap;*/ /* nowrap (defecto) -> si los elementos sobrepasan el tamaño del flex container, se encojen */
+
+    /*flex-wrap: wrap;*/ /* wrap -> crea una nueva linea si los items sobrepasan el tamaño del flex container */
+
+    /*flex-wrap: wrap-reverse;*/ /* wrap-reverse -> igual a wrap pero manda al final del cross-axis */
+
+    /*flex-flow: <flex-direction> <flex-wrap>;*/
+    /*flex-flow: row wrap;*/
+
+    /*justify-content: space-between;*/ /* space-between -> alina los elementos, el primero al inicio del flex container y el ultimo, al final del flex container */
+
+    /*justify-content: space-around;*/ /* space-around -> destribuye a los item de igual manera pero no los pega a los lados, pero sumando los espacios de cada elemento */
+
+    /*justify-content: space-evenly;*/ /* space-evenly -> distribuye a los elementos con el mismo espacio de separación sin tocar los border del flex container */
+
+    justify-content: center; /* center -> centra a todos los elementos */
+
+    /* las propiedaes de alienamiento solo destribuyen a los item si hay espacio disponible en el flex container */
 }
 
 
