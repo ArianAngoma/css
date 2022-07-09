@@ -5,7 +5,7 @@
 }
 
 .container {
-    width: 90%;
+    width: 400px;
     max-width: 600px;
     height: 600px;
     outline: 2px solid #000;
@@ -18,7 +18,7 @@
     /*align-items: stretch;*/ /* stretch (deefecto) -> estira los items */
     /*align-items: flex-start;*/ /* flex-start -> Tamaño de los item es el minimo de su contenido */
 
-    flex-direction: row; /* row (defecto) */
+    /*flex-direction: row;*/ /* row (defecto) */
 
     /*flex-wrap: nowrap;*/ /* nowrap (defecto) -> si los elementos sobrepasan el tamaño del flex container, se encojen */
 
@@ -53,16 +53,18 @@
 
     /*align-items: baseline;*/ /* baseline -> se alinean en base asu base del contenido del elemento */
 
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
 
-    align-content: flex-start; /* solo serviría si tiene elementos que se desbordan - similar a justify-contect */
+   /* align-content: center;*/ /* solo serviría si tiene elementos que se desbordan - similar a justify-contect */
+
+   /* justify-content: space-between;*/
 }
 
 
 .item { /* si no espesificamos un width o un height, se estira, es su comportamiento de por defecto */
-    --height: 90px;
+    --height: 80px;
     background: tomato;
-    width: 200px;
+    width: 80px;
     height: var(--height);
     line-height: var(--height);
     color: #fff;
@@ -70,10 +72,12 @@
     font-weight: bold;
     font-size: 1.5rem;
     font-family: sans-serif;
+
+    order: 0; /* 0 (defecto) -> order de 0  - se ordena de menor a mayor*/
 }
 
 .item1 {
-
+    /*order: 1;*/ /* 1 -> order de 1 */
 }
 
 .item2 {
@@ -82,8 +86,20 @@
 
 .item3 {
     background: crimson;
+   /* order: -1;*/ /* -1 -> order de -1 */
 }
 
 .item4 {
     background: steelblue;
 }
+/*
+@media  screen and (min-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .item4 {
+        order: -1;
+    }
+}
+*/
