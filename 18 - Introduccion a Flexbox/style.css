@@ -55,9 +55,9 @@
 
     /*flex-wrap: wrap;*/
 
-   /* align-content: center;*/ /* solo serviría si tiene elementos que se desbordan - similar a justify-contect */
+    /* align-content: center;*/ /* solo serviría si tiene elementos que se desbordan - similar a justify-contect */
 
-   /* justify-content: space-between;*/
+    /* justify-content: space-between;*/
 }
 
 
@@ -74,10 +74,18 @@
     font-family: sans-serif;
 
     order: 0; /* 0 (defecto) -> order de 0  - se ordena de menor a mayor*/
+
+    /*flex-grow: 1;*/
+
+    flex-shrink: 1; /* 1 (defecto) -> si el elemento no tiene espacio disponible, se reduce su tamaño */
 }
 
 .item1 {
     /*order: 1;*/ /* 1 -> order de 1 */
+
+    /*flex-grow: 0;*/ /* 0 (defecto) -> determina el espacio sobrante para los elementos */
+
+    /*flex-shrink: 3; *//* 0 -> se reducirá de temaño a los demas elementos para que no sobresalgan del flex container */
 }
 
 .item2 {
@@ -86,12 +94,15 @@
 
 .item3 {
     background: crimson;
-   /* order: -1;*/ /* -1 -> order de -1 */
+    /* order: -1;*/ /* -1 -> order de -1 */
+
+    /*flex-grow: 1;*/
 }
 
 .item4 {
     background: steelblue;
 }
+
 /*
 @media  screen and (min-width: 600px) {
     .container {
