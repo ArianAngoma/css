@@ -62,9 +62,9 @@
 
 
 .item { /* si no espesificamos un width o un height, se estira, es su comportamiento de por defecto */
-    --height: 80px;
+    --height: 30px;
     background: tomato;
-    width: 80px;
+    width: 150px;
     height: var(--height);
     line-height: var(--height);
     color: #fff;
@@ -77,7 +77,11 @@
 
     /*flex-grow: 1;*/
 
-    flex-shrink: 1; /* 1 (defecto) -> si el elemento no tiene espacio disponible, se reduce su tamaño */
+   /* flex-shrink: 1;*/ /* 1 (defecto) -> si el elemento no tiene espacio disponible, se reduce su tamaño */
+
+    /*flex-basis: auto;*/ /* auto (defecto) -> el tamaño del elemento es el que se le asigne */
+
+/*    flex-basis: 70px;*/
 }
 
 .item1 {
