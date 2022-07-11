@@ -58,13 +58,15 @@
     /* align-content: center;*/ /* solo serviría si tiene elementos que se desbordan - similar a justify-contect */
 
     /* justify-content: space-between;*/
+
+    align-items: center;
 }
 
 
 .item { /* si no espesificamos un width o un height, se estira, es su comportamiento de por defecto */
-    --height: 30px;
+    --height: 80px;
     background: tomato;
-    width: 150px;
+    width: 80px;
     height: var(--height);
     line-height: var(--height);
     color: #fff;
@@ -77,11 +79,25 @@
 
     /*flex-grow: 1;*/
 
-   /* flex-shrink: 1;*/ /* 1 (defecto) -> si el elemento no tiene espacio disponible, se reduce su tamaño */
+    /* flex-shrink: 1;*/ /* 1 (defecto) -> si el elemento no tiene espacio disponible, se reduce su tamaño */
 
-    /*flex-basis: auto;*/ /* auto (defecto) -> el tamaño del elemento es el que se le asigne */
+    /*flex-basis: auto;*/ /* auto (defecto) -> el tamaño del elemento es el que se le asigne, main axis */
 
-/*    flex-basis: 70px;*/
+    /*    flex-basis: 70px;*/
+
+    /*flex: grow shrink basis;*/
+
+    /*flex: auto;*/ /* 1 1 auto */
+
+    /*flex: 1;*/ /* 1 1 0% */
+
+    /*flex: 1 100px;*/ /* 1 1 100px */
+
+    /*flex: none;*/ /* 0 0 auto */
+
+    /*flex: 10em;*/ /* 1 1 10em */
+
+    /*flex: 1;*/
 }
 
 .item1 {
@@ -90,10 +106,21 @@
     /*flex-grow: 0;*/ /* 0 (defecto) -> determina el espacio sobrante para los elementos */
 
     /*flex-shrink: 3; *//* 0 -> se reducirá de temaño a los demas elementos para que no sobresalgan del flex container */
+
+    /*
+
+     align-self -> hace que pueda alinear un elemento en especifico en el cross axis
+
+     */
+
+    /*align-self: flex-end;*/ /* flex-end -> se alinea al final del cross axis */
 }
 
 .item2 {
     background: darkslateblue;
+
+    /* align-self: stretch; !* stretch (defecto) -> se estira por el cross axis *!
+     height: auto;*/
 }
 
 .item3 {
@@ -101,6 +128,12 @@
     /* order: -1;*/ /* -1 -> order de -1 */
 
     /*flex-grow: 1;*/
+
+    /* se puede centrar con este truco -> ocupa todo el margen que se le quiere asignar */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .item4 {
