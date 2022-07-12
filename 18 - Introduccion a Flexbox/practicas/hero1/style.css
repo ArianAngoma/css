@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --height-nav: 100px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header__logo-img {
+    width: 150px;
+}
+
+.header {
+    height: var(--height-nav);
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.header__nav-link {
+    margin-left: 1em;
+    text-decoration: none;
+    padding: 0 20px;
+    color: #3a3a3a;
+    display: inline-block;
+}
+
+.header__nav-link::after {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 0;
+    background: #c4c4f7;
+    transition: all .5s;
+}
+
+.header__nav-link:hover::after {
+    width: 100%;
+}
+
+.header__nav-link-signup {
+    padding: 10px 20px;
+    background: #c4c4f7;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 50px;
+}
+
+.main {
+    display: flex;
+    height: calc(100vh - var(--height-nav));
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    overflow: hidden;
+}
+
+.main__left {
+    width: 30%;
+}
+
+.main__right {
+    width: 50%;
+}
+
+.main__right-img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.main__left h1 {
+    font-size: 2.5rem;
+    color: #133b4f;
+    text-transform: uppercase;
+}
+
+.main__left h2 {
+    font-size: 1.5rem;
+    color: #fca70c;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+}
+
+.main__left p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #333;
+    line-height: 2rem;
+    margin: 30px 0;
+}
+
+.main__left-cta {
+    padding: 15px 30px;
+    background: #c4c4f7;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 50px;
+}
+
+@media screen and (max-width: 900px) {
+    :root {
+        --height-nav: 140px;
+    }
+
+    .header {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .main__left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        width: 100%;
+        text-align: center;
+    }
+
+    .main__right {
+        order: -1;
+        width: 90%;
+    }
+}
