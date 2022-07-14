@@ -55,7 +55,7 @@ body {
     max-width: 80%;
 }
 
-.hero__text {
+.hero__texts {
     width: 45%;
     color: #fff
 }
@@ -286,4 +286,89 @@ body {
 
 .footer__picture {
     width: 90%;
+}
+
+/* Break point */
+@media screen and (max-width: 800px) {
+    /* Hero section */
+    .hero {
+        --padding-container: 40px 0;
+
+        min-height: 100vh;
+    }
+
+    .hero__main {
+        justify-content: space-evenly;
+    }
+
+    .hero__img {
+        width: 60%;
+        margin-bottom: 30px;
+    }
+
+    .hero__picture {
+        max-width: 85%;
+    }
+
+    .hero__texts {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero__title {
+        font-size: 3.5rem;
+    }
+
+    /* About section */
+    .about__texts {
+        --align-title: center;
+
+        width: 90%;
+        text-align: center;
+        margin: 0 auto 80px;
+    }
+
+    .about__paragraph {
+        text-align: left;
+    }
+
+    .about__img {
+        width: 100%;
+    }
+
+    /* Portfolio section */
+    .portfolio__card {
+        width: 45%;
+        margin-bottom: 30px;
+    }
+
+    /* Gallery section */
+    .gallery__picture {
+        width: 45%;
+    }
+
+    /* Languages section */
+    .language__container {
+        justify-content: space-between;
+    }
+
+    /* Footer section */
+    .footer_container {
+        /*flex-direction: column-reverse;*/
+        flex-direction: column;
+    }
+
+    .footer__img {
+        width: 45%;
+        order: -1;
+        margin-bottom: 30px;
+    }
+
+    .footer__picture {
+        width: 100%;
+    }
+
+    .footer__texts {
+        width: 100%;
+    }
 }
