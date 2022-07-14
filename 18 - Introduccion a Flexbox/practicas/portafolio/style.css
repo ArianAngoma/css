@@ -288,7 +288,7 @@ body {
     width: 90%;
 }
 
-/* Break point */
+/* Break point (800px) */
 @media screen and (max-width: 800px) {
     /* Hero section */
     .hero {
@@ -370,5 +370,58 @@ body {
 
     .footer__texts {
         width: 100%;
+    }
+}
+
+/* Break point (550px) */
+@media screen and (max-width: 550px) {
+    .title {
+        font-size: 2.2rem;
+    }
+
+    /* Hero section */
+    .hero__img {
+        width: 85%;
+    }
+
+    .hero__picture {
+        max-width: 100%;
+    }
+
+    .hero__title {
+        font-size: 2.8rem;
+    }
+
+    /* About section */
+    .about__texts {
+        width: 100%;
+    }
+
+    /* Portfolio section */
+    .portfolio__card {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    /* Gallery section */
+    .gallery__picture {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .language__container {
+        justify-content: space-around;
+    }
+
+    .languages__picture {
+        width: 35%;
+        margin-bottom: 30px;
+    }
+
+    /* Footer section */
+    .footer__img {
+        width: 90%;
+        max-width: 330px;
+        margin-bottom: 40px;
     }
 }
