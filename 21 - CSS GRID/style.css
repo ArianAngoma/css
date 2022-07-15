@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial';
+}
+
+.grid {
+    max-width: 700px;
+    width: 90%;
+    height: 500px;
+    margin: 20px auto;
+    outline: 3px solid #000;
+
+    display: grid;
+
+    grid-auto-flow: row; /* row (defecto) -> grid line por defecto es horizontal */
+
+    /*grid-auto-flow: column;*/ /* column -> grid line en columna */
+
+    /*align-items: stretch;*/ /* stretch (defecto) -> estira a los grid items si no tiene un height definido */
+
+    /*grid-template-columns: 100px 2cm 30%;*/ /* crea columnas y por cada medida que pongamos es una columna, en este caso 3 */
+
+    /*grid-template-columns: 200px 200px;*/ /* crea columnas y por cada medida que pongamos es una columna, en este caso 2 */
+
+    /*grid-template-columns: 25% 25% 25% 25%;*/
+    /*grid-template-columns: repeat(4, 25%);*/
+
+    /*grid-template-columns: 20px 50px 20px 50px 20px 50px;*/
+    /*grid-template-columns: repeat(3, 20px 50px);*/
+
+    grid-template-columns: repeat(3, 10%);
+}
+
+.grid__item {
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.grid :nth-child(1) {
+    background: crimson;
+}
+
+.grid :nth-child(2) {
+    background: darkmagenta;
+}
+
+.grid :nth-child(3) {
+    background: steelblue;
+}
+
+.grid :nth-child(4) {
+    background: brown;
+}
+
+.grid :nth-child(5) {
+    background: chocolate;
+}
+
+.grid :nth-child(6) {
+    background: midnightblue;
+}
+
