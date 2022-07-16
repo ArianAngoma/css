@@ -33,7 +33,27 @@ body {
     /*grid-template-columns: 20px 50px 20px 50px 20px 50px;*/
     /*grid-template-columns: repeat(3, 20px 50px);*/
 
-    grid-template-columns: repeat(3, 10%);
+    /*grid-template-columns: 1fr 1fr 1fr; *//* crea tres columan dividiva en tres fracciones */
+
+    /*grid-template-columns: 200px 1fr 1fr 1fr;*/ /* crea yna columna de 200px y despues tres columnas divididas en tres fracciones */
+
+    /*grid-template-columns: 3fr 1fr 1fr;*/ /* crea tres columnas divididas en 5 fracciones, la primera ocupda 3 fracciones y las segunda 1 y la ultima 1 */
+
+    /*grid-template-columns: repeat(6, 1fr);*/
+
+    /*grid-template-columns: 1fr 1fr 1fr auto;*/ /* auto -> en este caso toma el font-size de su contenido */
+
+    /*grid-template-columns: 100px auto;*/ /* auto -> en este caso toma lo restante */
+
+    grid-template-columns: repeat(3, 1fr);
+
+    /*grid-template-rows: auto;*/ /* auto (defecto) */
+
+    /*grid-template-rows: repeat(4, 1fr);*/ /* crear 4 filas de 1 fraccion */
+
+    /*grid-template-rows: repeat(2, 1fr 2fr);*/
+
+    grid-template-rows: repeat(4, 1fr);
 }
 
 .grid__item {
