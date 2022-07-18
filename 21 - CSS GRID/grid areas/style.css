@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.grid {
+    width: 90%;
+    max-width: 700px;
+    height: 600px;
+    outline: 3px solid black;
+    margin: 10px auto;
+
+    display: grid;
+
+    /* las areas deben ser cuadradas o rectagulares */
+
+    /* dos comillas ("") crean una fila, y los nombre que van dentro crean una columna */
+
+    /*grid-template-areas: "arian angoma vilchez andrea";*/ /* en este caso crea una fila con cuatro columnas, que tiene cada area con nombre arian angoma vilchez y andrea respectivamente */
+
+    /*grid-template-areas:
+            "arian angoma vilchez andrea"
+            "arian angoma vilchez andre";*/ /* en este caso crea dos filas, y 4 areas, cada area ocupa dos en columna, y me permite porque son rectagulos */
+
+    grid-template-areas:
+            "arian arian angoma vilchez"
+            "arian arian angoma vilchez"; /* en este caso crea dos filas, con 3 areas, la primera(arian) es cuadro de 2x2, la segunda(angoma) es un rectagunalo de 2x1, y la tercera(vilchez) es un rectaungulo de 2x1  */
+}
+
+.grid__item {
+    font-size: 2rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    background: crimson;
+}
+
+.main {
+    background: steelblue;
+}
+
+.sidebar {
+    background: purple;
+}
+
+.footer {
+    background: chocolate;
+}
