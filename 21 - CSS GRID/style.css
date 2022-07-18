@@ -69,12 +69,12 @@ body {
     /*grid-column-start: 3;*/ /* definimos en que linea de columna empiza, en este caso empiza en la tercera grid line column */
     /*grid-column-end: 5;*/ /* definimos en que linea de columna termina, en este caso en la linea 5 */
 
-    grid-column: 3 / 5; /* lidea donde empiza (start-line) / liena donde termina (end-line) */
+    /*grid-column: 3 / 5;*/ /* lidea donde empiza (start-line) / liena donde termina (end-line) */
 
     /*grid-row-start: 3;*/ /* definimos en que linea de fila empiza, en este caso empiza en la tercera grid line row */
     /*grid-row-end: 5;*/ /* definimos en que linea de fila termina, en este caso en la linea 5 */
 
-    grid-row: 3 / 5; /* lidea donde empiza (start-line) / liena donde termina (end-line) */
+    /*grid-row: 3 / 5;*/ /* lidea donde empiza (start-line) / liena donde termina (end-line) */
 
 }
 
@@ -89,6 +89,20 @@ body {
 
 .grid :nth-child(3) {
     background: steelblue;
+
+    /*grid-column: span 2;*/ /* ocupa dos columnas desde su posicion inicial */
+
+    /*grid-row: span 3;*/ /* ocupa tres filas desde su posicion inicial */
+
+    /*grid-column: 2 / span 3;*/
+
+    /*grid-row: 1 / span 3;*/
+
+    /*grid-column: 1 / -1;*/ /* ocupa todad lad columna porque 1 es inicio y -1 es final, si fuera -2 sería la penultima columna */
+
+    /*grid-row: 3 / -1;*/
+
+    grid-area: 2 / 2 / 3 / 5; /* grid-area: row-start / column-start / row-end / column-end */
 }
 
 .grid :nth-child(4) {
