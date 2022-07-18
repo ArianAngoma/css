@@ -45,7 +45,7 @@ body {
 
     /*grid-template-columns: 100px auto;*/ /* auto -> en este caso toma lo restante */
 
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 
     /*grid-template-rows: auto;*/ /* auto (defecto) */
 
@@ -53,7 +53,15 @@ body {
 
     /*grid-template-rows: repeat(2, 1fr 2fr);*/
 
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    /*row-gap: 20px;*/ /* espacio entre filas */
+
+    /*column-gap: 30px;*/ /* espacio entre columnas */
+
+    /*gap: row column;*/
+
+    gap: 20px 30px;
 }
 
 .grid__item {
@@ -102,7 +110,7 @@ body {
 
     /*grid-row: 3 / -1;*/
 
-    grid-area: 2 / 2 / 3 / 5; /* grid-area: row-start / column-start / row-end / column-end */
+    /*grid-area: 2 / 2 / 3 / 5;*/ /* grid-area: row-start / column-start / row-end / column-end */
 }
 
 .grid :nth-child(4) {
