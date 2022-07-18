@@ -17,7 +17,7 @@ body {
 
     display: grid;
 
-    grid-auto-flow: row; /* row (defecto) -> grid line por defecto es horizontal */
+    /*grid-auto-flow: row;*/ /* row (defecto) -> grid line por defecto es horizontal */
 
     /*grid-auto-flow: column;*/ /* column -> grid line en columna */
 
@@ -78,6 +78,10 @@ body {
     /*grid-auto-rows: 1fr;*/
 
     /*grid-auto-columns: 1fr 2fr;*/ /* define el ancho de las columnas implisitas, la primera columna su ancho será de una fracción y la segunda de 2 fracciones, o si se crea como patron osea intercalando, similar a repeat(infinito, 1fr 2rf) */
+
+    /*grid-auto-flow: dense;*/ /* (row dense) dense -> las columnas se crean de forma mas densa, trata de ordenar el contenido */
+
+    grid-auto-flow: column dense; /* (column dense) dense -> las filas se crean de forma mas densa, trata de ordenar el contenido */
 }
 
 .grid__item {
@@ -102,6 +106,7 @@ body {
 
     /*grid-row: 3 / 5;*/ /* lidea donde empiza (start-line) / liena donde termina (end-line) */
 
+    grid-row: 3;
 }
 
 .grid :nth-child(2) {
@@ -111,6 +116,8 @@ body {
 
     grid-row-start: 1;
     grid-row-end: 3;*/
+
+    grid-row: span 2;
 }
 
 .grid :nth-child(3) {
@@ -133,6 +140,8 @@ body {
 
 .grid :nth-child(4) {
     background: brown;
+
+    grid-column: span 2;
 }
 
 .grid :nth-child(5) {
