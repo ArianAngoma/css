@@ -27,9 +27,21 @@ body {
             "arian angoma vilchez andrea"
             "arian angoma vilchez andre";*/ /* en este caso crea dos filas, y 4 areas, cada area ocupa dos en columna, y me permite porque son rectagulos */
 
-    grid-template-areas:
+    /*grid-template-areas:
             "arian arian angoma vilchez"
-            "arian arian angoma vilchez"; /* en este caso crea dos filas, con 3 areas, la primera(arian) es cuadro de 2x2, la segunda(angoma) es un rectagunalo de 2x1, y la tercera(vilchez) es un rectaungulo de 2x1  */
+            "arian arian angoma vilchez";*/ /* en este caso crea dos filas, con 3 areas, la primera(arian) es cuadro de 2x2, la segunda(angoma) es un rectagunalo de 2x1, y la tercera(vilchez) es un rectaungulo de 2x1  */
+
+    grid-template-columns: repeat(5, 1fr);
+
+    grid-template-rows: repeat(3, 1fr);
+
+    gap: 10px;
+
+    grid-template-areas:
+        "header header header main main"
+        /*"header header header    .    ."*/
+        "header header header main main"
+        "sidebar sidebar footer footer footer";
 }
 
 .grid__item {
@@ -42,16 +54,32 @@ body {
 
 .header {
     background: crimson;
+
+    grid-area: header; /* solo puedo darle header porque fue definido ese nombre anteriormente */
 }
 
 .main {
     background: steelblue;
+    grid-area: main;
 }
 
 .sidebar {
     background: purple;
+    grid-area: sidebar;
 }
 
 .footer {
     background: chocolate;
+    grid-area: footer;
+}
+
+
+@media screen and (max-width: 500px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "header header header"
+            "main main sidebar"
+            "footer footer footer";
+    }
 }
