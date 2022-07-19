@@ -60,7 +60,37 @@
 
     /*grid-template-columns: repeat(auto-fit, 10%);*/ /* auto-fit -> a diferencia de auto-fill si hay mas espacio no creará mas columnas */
 
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /*grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));*/
+
+
+
+    grid-template-columns: repeat( 2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    /* justify-items -> aplica en el eje horizontal o en las filas */
+    /*justify-items: stretch;*/ /* stretch (defecto) -> hace que estira los items*/
+
+    /*justify-items: start;*/ /* start -> al principio de las filas */
+
+    /*justify-items: end; *//* end -> al final de las filas */
+
+    /*justify-items: center;*/ /* center -> al centro de las filas */
+
+
+    /* align-items -> aplica en el eje vertical o columna */
+    /*align-items: stretch;*/ /* stretch (defecto) -> hace que estira los items*/
+
+    /*align-items: start;*/ /* start -> al principio de las columnas */
+
+    /*align-items: end;*/ /* end -> al final de las columnas */
+
+    /*align-items: center;*/ /* center -> al centro de las columnas */
+
+
+    /*place-items: align-items justify-aitems;*/
+    /*place-items: start end;*/ /* en columna lo manda al principio, y en fila al final */
+    /*place-items: start stretch;*/ /* en columna lo manda al principio, y en fila lo estira */
+    place-items: start; /* aplica para los dos el start */
 }
 
 .grid__item {
