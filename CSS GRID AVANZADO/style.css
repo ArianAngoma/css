@@ -17,11 +17,23 @@
 
     /*grid-template-columns: [linea-inicial] 1fr [linea-final linea-final-2] 1fr [linea-final-grid];*/ /* se puede poner dos nombres */
 
-    grid-template-columns:
-    [linea1] 1fr [linea2] 1fr [linea3] 1fr [linea4];
+    /*grid-template-columns:
+    [linea1] 1fr [linea2] 1fr [linea3] 1fr [linea4];*/
 
-    grid-template-rows:
-    [linea-inicial] 1fr [linea-medio] 1fr [linea-final];
+    /*grid-template-rows:
+    [linea-inicial] 1fr [linea-medio] 1fr [linea-final];*/
+
+
+
+    /*grid-template-columns: [header-start main-start] 1fr 1fr 1fr 1fr [header-end main-end];
+
+    grid-template-rows: [header-start] 1fr [header-end main-start] 1fr [main-end] 1fr;*/
+
+
+
+    grid-template-columns: repeat(4, [column-start] 1fr [colums-end]);
+
+    grid-template-rows: repeat(3, [row-start] 1fr [row-end]);
 }
 
 .grid__item {
@@ -34,13 +46,21 @@
 .grid :nth-child(1) {
     background: steelblue;
 
-    grid-column: linea2 / linea4;
+    /*grid-column: linea2 / linea4;
 
-    grid-row: linea-medio / linea-final;
+    grid-row: linea-medio / linea-final;*/
+
+    /*grid-area: main;*/
+
+    grid-column: column-start 2 / column-start 4;
+
+    grid-row: row-start 2 / row-start 4;
 }
 
 .grid :nth-child(2) {
     background: crimson;
+
+    /*grid-area: header;*/ /* se puede asignar una area con solo un nombre (area implisita), solo debes de nombrar a las lineas con el sufijo "-start" y "-end" */
 }
 
 .grid :nth-child(3) {
