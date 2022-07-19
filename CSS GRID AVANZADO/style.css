@@ -6,7 +6,7 @@
 
 .grid {
     width: 90%;
-    max-width: 600px;
+    /*max-width: 600px;*/
     height: 600px;
     margin: 30px auto;
     outline: 3px solid black;
@@ -47,7 +47,20 @@
     /*grid-template-columns: min-content max-content;
     grid-template-rows: min-content max-content;*/
 
-    grid-template-columns: fit-content(200px); /* fit-content -> el tamaño mínimo es el min-content y el maxico es que espesificamos */
+    /*grid-template-columns: fit-content(200px);*/ /* fit-content -> el tamaño mínimo es el min-content y el maxico es que espesificamos */
+
+    /*grid-template-columns: minmax(80px, 300px);*/ /* el valor mínimo del track-columna será 80px y maximo de 300px */
+
+    /*grid-template-columns: minmax(80px, 300px) minmax(20px, 80px);*/ /* el primer track-colums su tamaó minimo sera de 80px y maximo 300px, el segundo track-column su tamaó mínimo sera de 20px y maximo de 80px */
+
+    /*grid-template-columns: repeat(auto-fill, 20%);*/ /* auto-fill -> creará tantos tracks como se pueda con respecto al porcentaje y a la medida del grid-container, si hay mas espacio creará mas columnas con un tamaño de 20% */
+
+    /*grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));*/ /* se creará columnas minimo de 200px y maximo de una fracción */
+
+
+    /*grid-template-columns: repeat(auto-fit, 10%);*/ /* auto-fit -> a diferencia de auto-fill si hay mas espacio no creará mas columnas */
+
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .grid__item {
