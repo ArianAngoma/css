@@ -6,8 +6,7 @@
 
 .grid {
     width: 90%;
-    /*max-width: 600px;*/
-    height: 600px;
+    height: 800px;
     margin: 30px auto;
     outline: 3px solid black;
 
@@ -64,8 +63,8 @@
 
 
 
-    grid-template-columns: repeat( 2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 200px);
 
     /* justify-items -> aplica en el eje horizontal o en las filas */
     /*justify-items: stretch;*/ /* stretch (defecto) -> hace que estira los items*/
@@ -90,7 +89,15 @@
     /*place-items: align-items justify-aitems;*/
     /*place-items: start end;*/ /* en columna lo manda al principio, y en fila al final */
     /*place-items: start stretch;*/ /* en columna lo manda al principio, y en fila lo estira */
-    place-items: start; /* aplica para los dos el start */
+    /*place-items: start;*/ /* aplica para los dos el start */
+
+
+    /* solo cuando hay espacio disponible en el grid-contect, no cuenta las columnas o las filas implisitas */
+    /*justify-content: space-between;*/  /* stretch | start | end | space-between | center | space-evenly | space-around */
+    /*align-content: space-between;*/
+
+    /*grid: rows / columns;*/
+    /*grid: 50% 50% / repeat(3, 1fr);*/ /* crea dos filas de 50% cada una, y tres columnas de una fraccion cada una */
 }
 
 .grid__item {
@@ -116,6 +123,10 @@
     /*grid-column: header-start / header-end;
 
     grid-row: header-start / header-end;*/
+
+    /*order: 0;*/ /* o (defeecto) */
+
+    order: 1; /* se pone al final porque es mayor que todos */
 }
 
 .grid :nth-child(2) {
@@ -125,6 +136,11 @@
 
     /*grid-column: main-start / main-end;
     grid-row: main-start / main-end;*/
+
+    /*grid-column: 1 / 2;
+    grid-row: 1 / 2;
+
+    z-index: 10;*/
 }
 
 .grid :nth-child(3) {
@@ -132,6 +148,9 @@
 
     /*grid-column: sidebar-start / sidebar-end;
     grid-row: sidebar-start / sidebar-end;*/
+
+    /*grid-column: 1 / 2;
+    grid-row: 1 / 2;*/
 }
 
 .grid :nth-child(4) {
@@ -139,4 +158,6 @@
 
     /*grid-column: footer-start / footer-end;
     grid-row: footer-start / footer-end;*/
+
+    order: -1; /* se pone al principio porque es menor que todos */
 }
