@@ -62,3 +62,31 @@ body {
     text-decoration: none;
     padding: 18px 45px;
 }
+
+@media screen and (max-width: 768px) {
+    .card::after {
+        grid-column: 1 / -2;
+    }
+
+    .card__content {
+        grid-column: 2 / -1;
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+    :root {
+        --columns-card: 1fr;
+        --rows-card: 1fr 1fr;
+        /*--rows-card: 1fr;*/
+    }
+
+    .card::after, .card__content {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    /*.card::after {
+        display: none;
+    }*/
+}
