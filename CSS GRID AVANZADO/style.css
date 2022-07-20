@@ -96,6 +96,8 @@
     /*justify-content: space-between;*/  /* stretch | start | end | space-between | center | space-evenly | space-around */
     /*align-content: space-between;*/
 
+    /*place-content: align-content justify-content;*/ /* shorthand */
+
     /*grid: rows / columns;*/
     /*grid: 50% 50% / repeat(3, 1fr);*/ /* crea dos filas de 50% cada una, y tres columnas de una fraccion cada una */
 }
@@ -127,6 +129,12 @@
     /*order: 0;*/ /* o (defeecto) */
 
     order: 1; /* se pone al final porque es mayor que todos */
+
+
+    /*align-self: start;*/ /* mismas propiedades que align-items, pero solo modificara a este elemento */
+    /*justify-self: center;*/
+
+    place-self: start center; /* shorthand */
 }
 
 .grid :nth-child(2) {
