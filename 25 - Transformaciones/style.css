@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    outline: 2px solid crimson;
+    height: 500px;
+    width: 90%;
+    margin: 60px auto;
+}
+
+.element {
+    background: steelblue;
+    width: 150px;
+    height: 150px;
+    color: #fff;
+    font-family: sans-serif;
+    padding: 10px;
+
+    /*transform: none;*/ /* none (defecto) */
+
+    /*transform: translateX(100px);*/ /* se traslada 100px desde su posición original hacia la derecha */
+
+    /*transform: translateX(-100px);*/ /* se traslada 100px desde su posición original hacia la izquierda */
+
+    /*transform: translateY(100px);*/ /* se traslada 100px desde su posición original hacia abajo */
+
+    /*transform: translateY(100%);*/ /* en transform el 100% se refiere al ancho o al alto del elemento, en este caso al alto */
+
+    /* shorthand */
+    /*transform: translate(X, Y);*/
+    /*transform: translate(100px, 50px);*/
+
+    transform: translate(100%); /* solo se aplica para el eje de las X */
+}
+
