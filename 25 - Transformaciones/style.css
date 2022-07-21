@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    min-height: 400vh;
+}
+
 .container {
     outline: 2px solid crimson;
     height: 500px;
@@ -63,6 +67,28 @@
     /* skew -> cortar o partir un elemento, igualmente que rotate solamente se usa valores angulares */
     /*transform: skew(80deg);*/
     /*transition: all .3s;*/
+
+
+    /* ------------------------------------------------------------ */
+    /*transform: scale(1.3) rotate(10deg) translate(50%) skew(10deg);*/
+
+    /*transform: rotate(180deg) translate(100%);*/ /* primero rota 180 grados, entonces se X positivo va la izquierda, y Y positivo ahora va arriva */
+
+
+    /*
+
+        AL ROTAR 180 GRADOS CAMBIAMOS EL SISTEMA DE CORDENADAS
+
+    */
+
+    /* ------------------------------------------------------------ */
+    /*
+
+        TODO ELEMENTO QUE TENGO UN TRANSFORM DIFERENTE A NODE Y TENGA UN ELEMENTO HIJO CON POSITION: FIXED, HARÁ QUE EL ELEMENTO FIXED SE POSICIONE EN EL
+
+     */
+
+    transform: scale(1);
 }
 
 .container:hover .element {
@@ -72,5 +98,20 @@
     /*
       skewX, skewY -> es buena practica usar por separado
     */
+}
+
+
+.fixed {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.794);
+    top: 0;
+    left: 0;
+
+    display: flex; /* se posiciona en base al navegador y siempre se queda ahí */
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
 }
 
