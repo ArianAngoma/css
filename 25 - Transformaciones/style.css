@@ -33,6 +33,44 @@
     /*transform: translate(X, Y);*/
     /*transform: translate(100px, 50px);*/
 
-    transform: translate(100%); /* solo se aplica para el eje de las X */
+    /*transform: translate(100%);*/ /* solo se aplica para el eje de las X */
+
+    /* ------------------------------------------------------------ */
+    /* rotate -> espesifica la cantidad de grados que un elemento girará en dirección a las manecillas del reloj */
+
+    /*
+        grados: 0-360 (deg)
+        radianes: 0-6.28319 (rad)
+        gradians: 0-400 (grad)
+        turn: 0-1 (turn)
+    */
+
+    /*transform: rotate(20deg);*/ /* gira 20 grados hacia la derecha (como un reloj) */
+
+    /*transform: rotate(.5turn);*/ /* gira .5 turn hacia la derecha (como un reloj), media vuelta */
+
+    /* ------------------------------------------------------------ */
+    /* scale -> permite escalar un elemento */
+    /*transform: scaleX(1);*/ /* 1 (defecto) */
+    /*transform: scaleX(2);*/ /* escala en 2 en la eje X */
+
+    /*transform: translate(100%) scaleX(-1);*/ /* -1 -> invierte el elemento en el eje X */
+
+    /*transform: scale(2);*/ /* escala en 2 en el eje X y Y */
+
+
+    /* ------------------------------------------------------------ */
+    /* skew -> cortar o partir un elemento, igualmente que rotate solamente se usa valores angulares */
+    /*transform: skew(80deg);*/
+    /*transition: all .3s;*/
+}
+
+.container:hover .element {
+    /* shorthand (X, Y) */
+    /*transform: skew(10deg, 10deg);*/
+
+    /*
+      skewX, skewY -> es buena practica usar por separado
+    */
 }
 
