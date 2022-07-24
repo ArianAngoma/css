@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    outline: 1px solid #000;
+    width: 90%;
+    height: 500px;
+    margin: 30px auto;
+}
+
+.element {
+    background: crimson;
+    width: 120px;
+    height: 120px;
+    color: #fff;
+    font-family: sans-serif;
+    position: relative;
+
+    transition: all 1s; /* all -> aplica a todos los elementos */
+    left: 0; /* si no cambiamos el estado por defecto de left que es auto, no podremos animarlo porque para poder animarlo necesita saber su estado inicial, y por eso podemos left:0 */
+}
+
+.container:hover .element {
+    /*background: steelblue;*/
+
+    /*left: 80px;*/
+
+    text-align: right;
+}
