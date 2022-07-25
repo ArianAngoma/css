@@ -36,7 +36,9 @@
 
     /*transition-property: background-color, transform, color;*/
 
-    transition-property: background-color, transform;
+    /*transition-property: background-color, transform;*/
+
+    transition-property: clip-path, transform;
 
     /* Establece el tiempo que tardara la transición */
     /*transition-duration: 100ms;*/
@@ -47,7 +49,9 @@
 
     /*transition-duration: .5s, 4s;*/ /* si tengo dos valores aqui, y puse tres valores en property, la duración se intercala, la primera duración a la primera propiedad, la segunda duración a la segunda propiedad y la SEGUNDA duración a la tercera propiedad */
 
-    transition-duration: 1.5s;
+    /*transition-duration: 1.5s;*/
+
+    transition-duration: .5s, 1s;
 
     /* Define la curva de acelarición de la transición */
     /* ease | linear | ease-in | ease-out | ease-in-out */
@@ -69,7 +73,20 @@
 
     /*transition-timing-function: steps(6, end);*/ /* steps(6, end) -> la curva de acelaración será de 6 pasos, y el final de la transición */
 
-    transition-timing-function: cubic-bezier(1,-1.77,.73,-1.13);
+    /*transition-timing-function: cubic-bezier(1,-1.77,.73,-1.13);*/
+
+    transition-timing-function: ease-in;
+
+
+    clip-path: circle(70%);
+
+    /* transition-delay -> define la espera para que se ejecute la transición */
+    /*transition-delay: 2s;*/
+
+    transition-delay: 0s, .5s;
+
+    /* ------------------- */
+    transition: clip-path .5s ease-in 0s, transform 1s ease-in .5s;
 }
 
 .container:hover .element {
@@ -79,11 +96,15 @@
 
     /*text-align: right;*/
 
-    background-color: steelblue;
+    /*background-color: steelblue;*/
 
     /*transform: scale(.5);*/
 
-    transform: translate(100%) scale(.5);
+    /*transform: translate(100%) scale(.5);*/
+
+    clip-path: circle(50%);
+
+    transform: translate(100%);
 
     /*color: #000;*/
 }
