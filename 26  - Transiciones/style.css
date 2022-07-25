@@ -21,6 +21,33 @@
 
     transition: all 1s; /* all -> aplica a todos los elementos */
     left: 0; /* si no cambiamos el estado por defecto de left que es auto, no podremos animarlo porque para poder animarlo necesita saber su estado inicial, y por eso podemos left:0 */
+
+
+    /* shorthand -> property | duration | timing-function | delay */
+
+    /* Indica a que propiedas aplica las transición */
+    /*transition-property: none;*/ /* none (defecto) */
+
+    /*transition-property: all;*/ /* all -> aplica la transición a todos los elementos animables y que cambien de estados  */
+
+    /*transition-property: display;*/
+
+    /*transition-property: background-color;*/
+
+    /*transition-property: background-color, transform, color;*/
+
+    transition-property: background-color, transform;
+
+    /* Establece el tiempo que tardara la transición */
+    /*transition-duration: 100ms;*/
+    /*transition-duration: 1s;*/
+    /*transition-duration: 3000ms;*/
+
+    /*transition-duration: .5s;*/
+
+    /*transition-duration: .5s, 4s;*/ /* si tengo dos valores aqui, y puse tres valores en property, la duración se intercala, la primera duración a la primera propiedad, la segunda duración a la segunda propiedad y la SEGUNDA duración a la tercera propiedad */
+
+    transition-duration: 1.5s;
 }
 
 .container:hover .element {
@@ -28,5 +55,13 @@
 
     /*left: 80px;*/
 
-    text-align: right;
+    /*text-align: right;*/
+
+    background-color: steelblue;
+
+    /*transform: scale(.5);*/
+
+    transform: translate(100%) scale(.5);
+
+    /*color: #000;*/
 }
