@@ -48,6 +48,28 @@
     /*transition-duration: .5s, 4s;*/ /* si tengo dos valores aqui, y puse tres valores en property, la duración se intercala, la primera duración a la primera propiedad, la segunda duración a la segunda propiedad y la SEGUNDA duración a la tercera propiedad */
 
     transition-duration: 1.5s;
+
+    /* Define la curva de acelarición de la transición */
+    /* ease | linear | ease-in | ease-out | ease-in-out */
+
+    /*
+
+        ease -> aumenta la velocidad hacia la mitad de la transición, disminuyendola al final
+
+        linear -> la curva de acelaración será uniforme, nunca cambia
+
+        ease-in -> comienza lemtamente, pero poco a poco aumenta hasta completarse
+
+        ease-out -> comienza rapidamente, pero poco a poco disminuye hasta completarse
+
+        ease-in-out -> comienza lentamente, acelera y disminuye hasta completarse
+
+    */
+    /*transition-timing-function: linear;*/ /* linear (defecto) -> la curva de acelarion será constante */
+
+    /*transition-timing-function: steps(6, end);*/ /* steps(6, end) -> la curva de acelaración será de 6 pasos, y el final de la transición */
+
+    transition-timing-function: cubic-bezier(1,-1.77,.73,-1.13);
 }
 
 .container:hover .element {
