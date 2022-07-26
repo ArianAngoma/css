@@ -23,6 +23,18 @@ body {
     /* animation-timing-function - ease (defecto) */
     /* animation-iteration-count - 1 (defecto) */
     /* animation-direction - normal (defecto) */
+    /* animation-fill-mode - none (defecto) */
+    /* animation-delay - 0 (defecto) */
+    /* animation-play-state - running (defecto) */
+
+
+    /* ---------------------------------------- */
+
+    /* las dos primeras propiedades son necesarios, pero las otras no son importante por que tiene un valor por defecto y no hay un orden de colocacion */
+    animation: animaciones 3s ease-in-out infinite alternate;
+
+    /* ---------------------------------------- */
+
 
     animation-name: animaciones;
 
@@ -41,7 +53,24 @@ body {
     animation-direction: alternate-reverse; /* alternate-reverse -> se ejecuta desde el 100% porciento, y va hasta el 0%, ahora del 0% al 100%, y así sucesivamente */
 
 
-    /*animation-fill-mode: forwards;*/
+    /* animation-fill-mode -> define que es lo que sucede despues de la animación, osea si los estilos de la animación se aplican despues de que terminen */
+    /* none (defecto) */
+
+    /*animation-fill-mode: backwards;*/ /* backwards -> los estilos de animación se aplican antes de terminar la animación */
+
+    /*animation-fill-mode: forwards;*/ /* forwards -> los estilos de animación se siguen aplicando despues de terminar la animación */
+
+    /*animation-fill-mode: both;*/ /* both -> los estilos de animación se aplican antes y despues de terminar la animación */
+
+
+    /* animation-delay -> tiempo de retardo para que se ejecute la animación */
+    /*animation-delay: 2s;*/ /* 2s -> esperará 2 segundos para que la animación se ejecute */
+
+
+    /* animation-play-state -> permite pausar y reanudar la animación */
+    /* running (defecto) */
+
+    animation-play-state: paused; /* paused -> la animación se pausa */
 }
 
 /*
@@ -58,12 +87,26 @@ body {
 }
 */
 
-@keyframes animaciones {
+/*@keyframes animaciones {
     0% {
         transform: scale(.5);
     }
     100% {
         transform: scale(1);
+    }
+}*/
+
+.cuadrado:hover {
+    animation-play-state: running;
+}
+
+@keyframes animaciones {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
     }
 }
 
