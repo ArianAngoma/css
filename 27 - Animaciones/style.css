@@ -9,13 +9,66 @@ body {
 }
 
 .cuadrado {
-    width: 400px;
-    height: 400px;
+    width: 200px;
+    height: 200px;
     background: steelblue;
     margin: 40px auto;
     overflow: hidden;
+
+    /*animation: animaciones 3s;*/
+
+    /* shorthand */
+    /* animation-name */
+    /* animation-duration */
+    /* animation-timing-function - ease (defecto) */
+    /* animation-iteration-count - 1 (defecto) */
+    /* animation-direction - normal (defecto) */
+
+    animation-name: animaciones;
+
+    animation-duration: 1s;
+
+    animation-timing-function: linear;
+
+    /*animation-iteration-count: 2.5;*/ /* 2.5 -> se ejecutará 2 veces y la ultima a la mitad */
+
+    animation-iteration-count: infinite; /* infinite -> se ejecutará infinitas veces */
+
+    /*animation-direction: reverse;*/ /* reverse -> se ejecutará en reversa */
+
+    /*animation-direction: alternate;*/ /* alternate -> se ejecuta desde el cero porciento, y va hasta el 100%, ahora del 100% al 0%, y así sucesivamente */
+
+    animation-direction: alternate-reverse; /* alternate-reverse -> se ejecuta desde el 100% porciento, y va hasta el 0%, ahora del 0% al 100%, y así sucesivamente */
+
+
+    /*animation-fill-mode: forwards;*/
 }
 
+/*
+@keyframes animaciones {
+    from {
+        transform: scale(.5);
+        background: crimson;
+    }
+
+    to {
+        transform: scale(1) translate(50%);
+        background: blue;
+    }
+}
+*/
+
+@keyframes animaciones {
+    0% {
+        transform: scale(.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/* ---------------------------------------- */
 .spiderman {
     width: 200px;
     margin: 0 auto;
@@ -24,7 +77,7 @@ body {
 
     /*animation: moverSpiderman 3s;*/
 
-    animation: moverSpiderman 3s infinite;
+    /*animation: moverSpiderman 3s infinite;*/
 
     /*animation: moverSpiderman 3s infinite,
     bg 2s infinite;*/
@@ -75,6 +128,8 @@ body {
 }
 */
 
+/*
+
 @keyframes moverSpiderman {
     0% {
         transform: translateY(-50px);
@@ -97,6 +152,7 @@ body {
     }
 }
 
+*/
 
 /*
 @keyframes bg {
