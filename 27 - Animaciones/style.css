@@ -20,18 +20,30 @@ body {
     width: 200px;
     margin: 0 auto;
     display: block;
+    background: crimson;
 
     /*animation: moverSpiderman 3s;*/
 
     animation: moverSpiderman 3s infinite;
+
+    /*animation: moverSpiderman 3s infinite,
+    bg 2s infinite;*/
 }
+
+
+/*
+
+    Si no se declara un 100%, su estado es el por defecto, en este caso su background será crimson, de igual manera si no espesificamos un porcentaje, el estado será el por defecto.
+
+*/
+/*
 
 @keyframes moverSpiderman {
     0% {
         background: #000;
     }
 
-    30% {
+    !*30% {
         background: crimson;
 
         transform: scale(1.2);
@@ -45,6 +57,55 @@ body {
 
     100% {
         background: tomato;
+    }*!
+}
+
+*/
+
+/*
+
+@keyframes moverSpiderman {
+    from { !* from -> estilos iniciales de la animación*!
+        transform: translateY(-50px);
+    }
+
+    to { !* to -> estilos finales de la animación *!
+        transform: translateY(0);
+    }
+}
+*/
+
+@keyframes moverSpiderman {
+    0% {
+        transform: translateY(-50px);
+    }
+
+    30% {
+        transform: translateY(0) rotate(5deg);
+    }
+
+    50% {
+        transform: rotate(-5deg);
+    }
+
+    75% {
+        transform: rotate(5deg);
+    }
+
+    100% {
+        transform: translateY(-50px);
     }
 }
 
+
+/*
+@keyframes bg {
+    to {
+        background: crimson;
+    }
+
+    from {
+        background: tomato;
+    }
+}
+*/
