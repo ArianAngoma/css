@@ -21,7 +21,6 @@ body {
 
     margin: auto;
 
-
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(6, 1fr);
@@ -40,12 +39,34 @@ body {
 
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
 
-    animation: show 2s ease-out forwards;
+    animation: show 2s 1s ease-out forwards;
+}
+
+.grid__texts {
+    grid-row: 2 / -2;
+    grid-column: 2 / 8;
+    z-index: 10;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+    animation: show 2s forwards;
+    /*animation: move 1s 2s forwards;*/
+}
+
+.grid__title {
+    font-size: 6rem;
+}
+
+.grid__title--transform {
+    font-size: 4.5rem;
+    animation: move 2s 2s forwards;
 }
 
 @keyframes show {
     to {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-
     }
 }
