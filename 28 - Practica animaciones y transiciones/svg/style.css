@@ -9,10 +9,11 @@
 }
 
 #globo {
-    transform: scale(.2);
-    transform-origin: top right;
+    transform-origin: center;
+    animation: rotate 2s 3s forwards;
 
-    animation: animate 2s 3s forwards; /* infinite alternate */
+    transform-box: fill-box;
+    /*animation: animate 2s 3s forwards;*/ /* infinite alternate */
 }
 
 #background {
@@ -24,5 +25,30 @@
 @keyframes animate {
     to {
         transform: unset;
+    }
+}
+
+/* ------------------------------------------------------------ */
+
+.svg2 {
+    width: 600px;
+    margin: 30px auto;
+    display: block;
+    outline: 4px solid #000;
+}
+
+#Telephone {
+    animation: rotate 2s infinite alternate;
+
+    transform-origin: center;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0) scale(1);
+    }
+
+    100% {
+        transform: rotate(360deg) scale(.2);
     }
 }
