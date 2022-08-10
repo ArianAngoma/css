@@ -42,13 +42,15 @@ body {
     background: steelblue;
 
     opacity: 0;
-    transition: opacity 1s;
+    transition: opacity 1s 1.5s;
     pointer-events: none;
 }
 
 .modal:target {
     opacity: 1;
     pointer-events: unset;
+
+    transition-delay: 0s;
 }
 
 .modal__container {
@@ -65,6 +67,29 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+
+    transition: clip-path 1s;
+}
+
+.modal:target .modal__container {
+    animation: showModal 2s 1.5s both;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+@keyframes showModal {
+    0% {
+      transform: translateY(-200%) rotate(10grad);
+    }
+
+    50% {
+        transform: translateY(0) rotate(-10deg);
+    }
+
+    100% {
+        transform: translateY(0) rotate(0);
+    }
 }
 
 .modal__img {
