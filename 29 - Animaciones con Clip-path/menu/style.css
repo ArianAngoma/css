@@ -72,5 +72,114 @@ body {
     position: fixed;
     top: 40px;
     right: 40px;
-    background-color: #000;
+}
+
+.menu__label {
+    background-color: #4a4e69;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+
+    position: relative;
+    z-index: 10;
+
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+
+    --transition1: transform .5s;
+    --transition2: none;
+    --transform1: scale(1);
+    --transform2: scale(0);
+}
+
+.menu__hamburger {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.menu__hamburger--hidden {
+    transform: var(--transform2);
+    transition: var(--transition2);
+}
+
+.menu__hamburger--show {
+    transform: var(--transform1);
+    transition: var(--transition1);
+}
+
+.menu__checked {
+    display: none;
+}
+
+.menu__checked:checked ~ .menu__label {
+    --transition2: transform .5s;
+    --transition1: none;
+    --transform2: scale(1);
+    --transform1: scale(0);
+}
+
+.menu__links {
+    width: 100%;
+    background-color: #52b788;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+
+    clip-path: circle(0 at top right);
+    transition: clip-path 1.3s;
+}
+
+.menu__link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.menu__checked:checked ~ .menu__links {
+    clip-path: circle(150% at top right);
+}
+
+.menu__checked:checked ~ .menu__links .menu__link {
+    --time1: 1.5s;
+    --time2: 2s;
+    --time3: 2.5s;
+
+    animation-name: show;
+    animation-duration: .5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    transform: translateY(-20%);
+}
+
+.menu__link:nth-child(1) {
+    animation-delay: var(--time1);
+}
+
+.menu__link:nth-child(2) {
+    animation-delay: var(--time2);
+}
+
+.menu__link:nth-child(3) {
+    animation-delay: var(--time3);
+}
+
+@keyframes show {
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
 }
