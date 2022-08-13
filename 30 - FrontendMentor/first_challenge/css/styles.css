@@ -33,6 +33,8 @@ body {
 }
 
 .hero {
+    --wave-bottom: url(../images/bg-section-top-mobile-1.svg);
+
     min-height: 100vh;
     position: relative;
 }
@@ -97,4 +99,62 @@ body {
     box-shadow: -5px 8px 16px -10px hsla(192, 100%, 9%, .5);
 
     justify-self: center;
+}
+
+.hero__picture {
+    margin-top: 5em;
+}
+
+.hero__img {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: block;
+}
+
+.hero__numbers {
+    margin-top: 5em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.hero__item {
+    overflow: hidden;
+    margin-bottom: 2em;
+}
+
+.hero__number {
+    font-size: 3.5rem;
+}
+
+.hero__community {
+    text-align: center;
+}
+
+.hero__icon {
+    display: block;
+    /* margin: 0 auto; */
+}
+
+.wave {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: 100% 100px;
+}
+
+.wave--bottom {
+    left: 0;
+    bottom: 0;
+    background-image: var(--wave-bottom);
+}
+
+.wave--top {
+    left: 0;
+    top: 0;
+    background-image: var(--wave-top);
 }
