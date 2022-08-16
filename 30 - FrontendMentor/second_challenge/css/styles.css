@@ -95,7 +95,7 @@ body {
 .hero__img {
     display: block;
     width: 100%;
-    max-width: 600px;
+    max-width: 500px;
     margin: 0 auto;
 }
 
@@ -152,7 +152,7 @@ body {
 
 .about__img {
     width: 100%;
-    max-width: 600px;
+    max-width: 500px;
     display: block;
     margin: 0 auto 3em;
 }
@@ -369,4 +369,85 @@ body {
 
 .footer__media {
     display: block;
+}
+
+
+@media (min-width: 768px) {
+    .hero__wave:before {
+        background-image: url(../images/bg-curvy-desktop.svg);
+    }
+
+    .hero__title {
+        font-size: 3rem;
+    }
+
+    /* Cards */
+
+    .cards {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 3em 4em;
+    }
+
+    /* About */
+
+    .about {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+        align-items: center;
+    }
+
+    .about__title {
+        font-size: 2rem;
+    }
+
+    /* Testimony */
+
+    .testimony {
+        justify-content: space-between;
+    }
+
+    .testimony__item {
+        width: 30%;
+    }
+
+    /* Join */
+
+    .join__container {
+        max-width: 800px;
+    }
+
+    .join__form {
+        grid-template-columns: 1fr max-content;
+        padding-top: 1em;
+    }
+
+    /* Footer */
+
+    .footer__content {
+        display: grid;
+        grid-auto-flow: column;
+        gap: 2em;
+    }
+
+    .footer__contact {
+        max-width: 200px;
+    }
+
+    .footer__nav {
+        margin-top: 0;
+    }
+
+    .footer__network {
+        margin: 0;
+    }
+
+    .footer__direction--first {
+        max-width: 300px;
+    }
+
+    .footer__direction--second {
+        margin: 0 0  1em;
+    }
 }
