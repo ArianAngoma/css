@@ -76,6 +76,7 @@ body {
 
 .hero__main {
     max-width: 1200px;
+    margin: 0 auto;
 }
 
 .hero__background {
@@ -253,6 +254,62 @@ body {
 .articles__paragraph {
     color: var(--grayish-blue);
     line-height: 1.5;
+}
+
+/* Footer */
+footer {
+    background: var(--dark-blue);
+    text-align: center;
+}
+
+.footer__container {
+    padding: 70px 0;
+}
+
+.footer__logo {
+    display: block;
+    width: max-content;
+    margin: 0 auto 1.5em;
+}
+
+.footer__img {
+    display: block;
+}
+
+.footer__socialMedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.footer__media {
+    text-decoration: none;
+}
+
+.footer__icon {
+    display: block;
+}
+
+.footer__nav {
+    margin-top: 1.5em;
+
+    display: grid;
+    gap: 1em;
+    justify-items: center;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.cta--footer {
+    margin: 1.5em 0;
+}
+
+.footer__copy {
+    color: var(--grayish-blue);
 }
 
 .cta--nav {
